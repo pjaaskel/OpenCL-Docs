@@ -1657,7 +1657,8 @@ server's OpenCL/api-docs repository.
         <enum value="0x1283"        name="CL_PROFILING_COMMAND_END"/>
         <enum value="0x1284"        name="CL_PROFILING_COMMAND_COMPLETE"/>
             <unused start="0x1285" end="0x128F" comment="Reserved for cl_profiling_info"/>
-            <unused start="0x1290" end="0x1291" comment="Reserved for MR179"/>
+            <unused start="0x1290" end="0x1290" comment="Reserved for MR179"/>
+        <enum value="0x1291"        name="CL_IMAGE_REQUIREMENTS_SLICE_PITCH_ALIGNMENT_EXT"/>
         <enum value="0x1292"        name="Reserved for PR750"/>
         <enum value="0x1293"             name="CL_COMMAND_BUFFER_FLAGS_KHR"/>
         <enum value="0x1294"             name="CL_COMMAND_BUFFER_QUEUES_KHR"/>
@@ -6939,6 +6940,11 @@ server's OpenCL/api-docs repository.
                 <enum name="CL_DEVICE_SINGLE_FP_ATOMIC_CAPABILITIES_EXT"/>
                 <enum name="CL_DEVICE_DOUBLE_FP_ATOMIC_CAPABILITIES_EXT"/>
                 <enum name="CL_DEVICE_HALF_FP_ATOMIC_CAPABILITIES_EXT"/>
+            </require>
+        </extension>
+        <extension name="cl_ext_image_from_buffer" supported="opencl">
+            <require comment="cl_image_requirements_info_ext">
+                <enum name="CL_IMAGE_REQUIREMENTS_SLICE_PITCH_ALIGNMENT_EXT"/>
             </require>
         </extension>
     </extensions>
