@@ -46,6 +46,8 @@ This extension is written against the OpenCL Specification Version 3.0.9.
 
 This extension requires OpenCL 3.0.
 
+This extension requires cl_ext_image_requirements_info.
+
 == Overview
 
 This extension adds support for YUV image formats.
